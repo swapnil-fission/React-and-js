@@ -1,25 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Welcome from "./funcDemo";
+import ClassDemo from "./ClassDemo";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   <div className="App">
+     <h1>We are using react application</h1>
+     <Welcome name="Swapnil" />
+     <p>Hello</p>
+     <ClassDemo />
+     
     </div>
   );
+  // return React.createElement('div',{className : 'App'},React.createElement('h1',null,'Now it is working'));
 }
 
 export default App;
